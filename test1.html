@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <link  rel="icon" href="#">
+    <link href="https://fonts.googleapis.com/css2?family=Imbue:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="WOW-master/css/libs/animate.css">
+    <link rel="stylesheet" href="color-1.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap');
+
+/* 
+global css style
+*/
+/* define variables css custom */
+:root
+{
+    --bg-black-900:#000000;
+    --bg-black-100:#dddddd;
+    --bg-black-50:#eff0f4;
+    --bg-opacity: rgba(255,255,255,,0.5);
+    --text-black-900:#000000;
+    --text-black-700:#555555;
+    --text-black-600:#666666;
+    --text-black-300:#bbbbbb;
+    --outer-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
+    --outer-shadow-0: 0 0 0 #d0d0d0, 0 0 0 #f8f8f8f8;
+    --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8; 
+    --inner-shadow-0:inset 0 0 0 #d0d0d0 ,inset 0 0 0 #f8f8f8 ;
+}
+body
+{
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-x: hidden;
+    background-color: var(--bg-black-50);
+    font-family: 'Raleway', cursive;
+}
+body.hidden-scrolling
+{
+    overflow-y: hidden;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    outline: none ;
+}
+::before,::after
+{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav-menu
+{
+    position: fixed;
+    background-color: var(--bg-black-50);
+    padding: 0 15px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* opacity: 0; */
+    /* visibility: hidden; */
+    overflow-y: auto;
+}
+.nav-menu.show 
+{
+    visibility: visible;
+    opacity: 1;
+    z-index: 9999;
+    transition: all 0.6s ease-in;
+}
+.nav-menu .close-nav-menu
+{
+    height: 40px;
+    width: 40px;
+    display: block;
+    font-size: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    text-align: center;
+    color: var(--text-black-600);
+    transition: all 0.5s ease-in-out;
+} 
+.nav-menu .close-nav-menu::after
+{
+    border-radius: 50%;
+}
+ .nav-menu-inner
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    /* display: none; */
+}
+.nav-menu ul
+{
+    padding: 15px;
+}
+.nav-menu ul li
+{
+    display: block;
+    margin-bottom: 20px;
+}
+.nav-menu ul li:last-child
+{
+    margin-bottom: 0;
+}
+.nav-menu ul li a
+{
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 600px;
+    color: var(--text-black-700);
+    padding: 5px 30px;
+    text-transform: capitalize;
+    border-radius: 30px;
+    transition: all 0.5s ease-in-out;
+}
+.nav-menu ul li a:hover
+{
+    text-decoration: none;
+}
+.nav-menu ul li a.active
+{
+    color: var(--skin-color);
+}
+.nav-menu ul li a::after
+{
+    border-radius: 30px;
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- nav menu  -->
+<nav class="nav-menu">
+    <div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
+    <div class="nav-menu-inner">
+        <ul>
+            <li> <a href="#home" class="link-item inner-shadow active">Home</a> </li>
+            <li> <a href="#about" class="link-item outer-shadow hover-in-shadow">About</a> </li>
+            <li> <a href="#services" class="link-item outer-shadow hover-in-shadow">Services</a> </li>
+            <li> <a href="#portfolio" class="link-item outer-shadow hover-in-shadow">Portfolio</a> </li>
+            <li> <a href="#testimonial" class="link-item outer-shadow hover-in-shadow">Testimonial</a> </li>
+            <li> <a href="#contact" class="link-item outer-shadow hover-in-shadow">Contact</a> </li>
+        </ul>
+    </div>
+</nav>
+
+<!--nav menu   -->
+</body>
+</html>
